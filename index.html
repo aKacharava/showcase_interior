@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<title>Various Interiors INC.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="int-sidebar int-sidebar2 int-red int-collapse int-top int-large int-padding" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="int_close()" class="int-button int-hide-large int-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="int-container">
+    <h3 class="int-padding-64"><b>Various<br>Interiors INC.</b></h3>
+  </div>
+  <div class="int-bar-block">
+    <a href="#" onclick="int_close()" class="int-bar-item int-button int-hover-white">Home</a> 
+    <a href="#showcase" onclick="int_close()" class="int-bar-item int-button int-hover-white">Showcase</a> 
+    <a href="#services" onclick="int_close()" class="int-bar-item int-button int-hover-white">Services</a> 
+    <a href="#designers" onclick="int_close()" class="int-bar-item int-button int-hover-white">Designers</a> 
+    <a href="#packages" onclick="int_close()" class="int-bar-item int-button int-hover-white">Packages</a> 
+    <a href="#contact" onclick="int_close()" class="int-bar-item int-button int-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="int-container int-top int-hide-large int-red int-xlarge int-padding">
+  <a href="javascript:void(0)" class="int-button int-red int-margin-right" onclick="int_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="int-overlay int-hide-large" onclick="int_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="int-main">
+
+  <!-- Header -->
+  <div class="int-container" style="margin-top:80px" id="showcase">
+    <h1 class="int-jumbo"><b>Interior Design</b></h1>
+    <h1 class="int-xxxlarge int-text-red"><b>Showcase</b></h1>
+    <hr class="int-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="int-row-padding">
+    <div class="int-half">
+      <img src="https://source.unsplash.com/1600x900/?interior, kitchen" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="https://source.unsplash.com/1600x900/?interior, livingroom" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="https://source.unsplash.com/1600x900/?interior, bedroom" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="int-half">
+      <img src="https://source.unsplash.com/1600x900/?interior, house" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="https://source.unsplash.com/1600x900/?interior, garden" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="https://source.unsplash.com/1600x900/?interior, garage" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="int-modal int-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="int-button int-black int-xxlarge int-display-topright">×</span>
+    <div class="int-modal-content int-animate-zoom int-center int-transparent int-padding-64">
+      <img id="img01" class="int-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="int-container" id="services" style="margin-top:75px">
+    <h1 class="int-xxxlarge int-text-red"><b>Services</b></h1>
+    <hr class="int-round">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illo deleniti, consequatur magnam deserunt libero nobis ipsa et? Iste corrupti nam, aperiam modi ratione quibusdam magni aut soluta! Rem, ex?
+    Similique dolorem laborum optio blanditiis, laudantium ut reiciendis nesciunt, earum a neque necessitatibus quas? Quia vel, mollitia, dolore omnis, molestiae ducimus numquam adipisci doloremque voluptates consectetur asperiores soluta voluptatum inventore.
+    Tempore quos repellat, minus aliquam deserunt at quam, unde autem culpa possimus rem alias modi excepturi. Et quaerat, rerum ducimus perferendis fugiat expedita sint neque illum nulla. Accusantium, non praesentium!
+    Sapiente ab quia quisquam perspiciatis corporis repellat voluptas laudantium ipsa nam distinctio velit voluptate rerum nemo, ratione exercitationem pariatur fugiat nihil culpa! Aspernatur eaque velit ipsam quod ad provident distinctio!
+    Quos voluptas perferendis praesentium ab deserunt rerum nesciunt optio expedita, nemo iste est doloremque placeat? Iste dolores corrupti, aut atque quae similique dolore earum ipsam maiores numquam odit deleniti corporis.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="int-container" id="designers" style="margin-top:75px">
+    <h1 class="int-xxxlarge int-text-red"><b>Designers</b></h1>
+    <hr class="int-round">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente necessitatibus et, nesciunt numquam impedit beatae nihil alias dignissimos autem error minus modi dolorum fugit repellendus velit sequi illum nobis.
+    Atque corrupti tempora, consequuntur quibusdam nam, quisquam in provident eius repudiandae adipisci odio non repellendus earum ipsum omnis error est magnam obcaecati officia. Quidem, facere? Veritatis doloremque corrupti ipsam ea.
+    Vitae unde molestiae doloremque vero atque ab corporis delectus earum aut sit harum laborum, accusantium doloribus quod ad pariatur, cumque eos recusandae voluptatibus. Saepe quisquam nulla laudantium eos nisi iure?
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="int-row-padding int-grayscale">
+    <div class="int-col m4 int-margin-bottom">
+      <div class="int-light-grey">
+        <img src="https://source.unsplash.com/ecH8mCm4nWk" alt="John" style="width:100%">
+        <div class="int-container">
+          <h3>John Doe</h3>
+          <p class="int-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="int-col m4 int-margin-bottom">
+      <div class="int-light-grey">
+        <img src="https://source.unsplash.com/rDEOVtE7vOs" alt="Jane" style="width:100%">
+        <div class="int-container">
+          <h3>Jane Doe</h3>
+          <p class="int-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="int-col m4 int-margin-bottom">
+      <div class="int-light-grey">
+        <img src="https://source.unsplash.com/hAzhOdGngxc" alt="Mike" style="width:100%">
+        <div class="int-container">
+          <h3>Mike Ross</h3>
+          <p class="int-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="int-container" id="packages" style="margin-top:75px">
+    <h1 class="int-xxxlarge int-text-red"><b>Packages</b></h1>
+    <hr class="int-round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  <div class="int-row-padding">
+    <div class="int-half int-margin-bottom">
+      <ul class="int-ul int-light-grey int-center">
+        <li class="int-dark-grey int-xlarge int-padding-32">Basic</li>
+        <li class="int-padding-16">Floorplanning</li>
+        <li class="int-padding-16">10 hours support</li>
+        <li class="int-padding-16">Photography</li>
+        <li class="int-padding-16">20% furniture discount</li>
+        <li class="int-padding-16">Good deals</li>
+        <li class="int-padding-16">
+          <h2>$ 199</h2>
+          <span class="int-opacity">per room</span>
+        </li>
+        <li class="int-light-grey int-padding-24">
+          <button class="int-button int-white int-padding-large int-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="int-half">
+      <ul class="int-ul int-light-grey int-center">
+        <li class="int-red int-xlarge int-padding-32">Pro</li>
+        <li class="int-padding-16">Floorplanning</li>
+        <li class="int-padding-16">50 hours support</li>
+        <li class="int-padding-16">Photography</li>
+        <li class="int-padding-16">50% furniture discount</li>
+        <li class="int-padding-16">GREAT deals</li>
+        <li class="int-padding-16">
+          <h2>$ 249</h2>
+          <span class="int-opacity">per room</span>
+        </li>
+        <li class="int-light-grey int-padding-24">
+          <button class="int-button int-red int-padding-large int-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="int-container" id="contact" style="margin-top:75px">
+    <h1 class="int-xxxlarge int-text-red"><b>Contact</b></h1>
+    <hr class="int-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form>
+      <div class="int-section">
+        <label>Name</label>
+        <input class="int-input int-border" type="text" name="Name" required>
+      </div>
+      <div class="int-section">
+        <label>Email</label>
+        <input class="int-input int-border" type="text" name="Email" required>
+      </div>
+      <div class="int-section">
+        <label>Message</label>
+        <input class="int-input int-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="int-button int-block int-padding-large int-red int-hover-black int-margin-bottom">Send Message</button>
+    </form>
+  </div>
+
+<!-- End content -->
+</div>
+
+<!-- Footer -->
+<footer class="int-light-grey int-container int-padding-32" style="margin-top:75px;padding-right:58px"><p class="int-right">Created by - <a title="int.CSS" target="_blank" class="int-hover-opacity">Alexander Kacharava</a></p></footer>
+
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</body>
+</html>
